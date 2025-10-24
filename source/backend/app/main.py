@@ -23,4 +23,4 @@ app.include_router(writing.router, prefix="/api/v1", tags=["writing"])
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the AI Writing Tutor API"}
+    return {"message": "Welcome to the Fixer AI API"}
