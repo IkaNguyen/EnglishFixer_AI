@@ -1,0 +1,108 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Quan trọng */
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fbeae9;
+  border: 1px solid #e74c3c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.corrected-text {
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.feedback-list {
+  margin-top: 15px;
+}
+
+.feedback-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #3498db;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.feedback-card .error-type {
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 5px;
+  display: inline-block;
+  background-color: #eaf5fb;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.feedback-card del {
+  color: #e74c3c;
+  text-decoration: line-through;
+}
+
+.feedback-card ins {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
