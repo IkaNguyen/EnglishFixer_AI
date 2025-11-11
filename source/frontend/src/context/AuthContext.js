@@ -15,8 +15,7 @@ export function AuthProvider({ children }) {
     const storedToken = localStorage.getItem('authToken');
     if (storedToken) {
       setToken(storedToken);
-      // Bạn cũng nên cài đặt token này vào header của axios
-      // axios.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`;
+      axios.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`;
     }
   }, []);
 
@@ -38,7 +37,7 @@ export function AuthProvider({ children }) {
     token,
     login,
     logout,
-    isAuthenticated: !!token, // Biến boolean tiện lợi
+    isAuthenticated: !!token,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
